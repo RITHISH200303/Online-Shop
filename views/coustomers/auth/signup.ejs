@@ -1,0 +1,44 @@
+<%-include('../includes/head',{pageTitle:'Signup'}) %>
+    <link rel="stylesheet" href="/styles/forms.css">
+    <link rel="stylesheet" href="/styles/auth.css">
+    </head>
+    <body>
+        <%-include('../includes/header') %>
+            <main>
+                <h4>Create new account</h4>
+                <form action="/">
+                    <p>
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+                    <p>
+                        <label for="confirm-email">Confirm E-mail</label>
+                        <input type="email" id="confirm-email" name="confirm-email" required>
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" minlength="8" name="password" required>
+                    </p>
+                    <hr>
+                    <p>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </p>
+                    <p>
+                        <label for="">Street</label>
+                        <input type="text" id="street" name="street" required>
+                    </p>
+                    <p>
+                        <label for="postal">Postal code</label>
+                        <input type="text" id="postal" name="postal" maxlength="5" required>
+                    </p>
+                    <p>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </p>
+                    <button>Create Account</button>
+                    <p><a id="switch-user" href="/login">Ligin insted</a></p>
+                </form>
+            </main>
+
+            <%-include('../includes/footer') %>

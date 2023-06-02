@@ -1,4 +1,6 @@
-function getSignUP(req, res) {}
+function getSignUP(req, res) {
+ res.render('coustomers/auth/signup') 
+}
 function getLogiIn(req, res) {}
 
 module.exports = {
