@@ -2,11 +2,12 @@
     <link rel="stylesheet" href="/styles/forms.css">
     <link rel="stylesheet" href="/styles/auth.css">
     </head>
+
     <body>
         <%-include('../includes/header') %>
             <main>
                 <h4>Create new account</h4>
-                <form action="/">
+                <form action="/signup" method="POST">
                     <p>
                         <label for="email">E-Mail</label>
                         <input type="email" name="email" id="email" required>
@@ -36,7 +37,7 @@
                         <label for="city">City</label>
                         <input type="text" id="city" name="city" required>
                     </p>
-                    <button>Create Account</button>
+                    <button class="btn">Create Account</button>
                     <p><a id="switch-user" href="/login">Ligin insted</a></p>
                 </form>
             </main>
