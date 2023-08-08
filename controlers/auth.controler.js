@@ -3,6 +3,7 @@ const User = require("../model/user.model");
 function getSignUP(req, res) {
   res.render("coustomers/auth/signup");
 }
+
 async function signup(req, res) {
   const user = new User(
     req.body.email,
@@ -21,6 +22,7 @@ async function signup(req, res) {
 function getLogiIn(req, res) {
   res.render('coustomers/auth/login')
 }
+
 
 module.exports = {
   getSignUP: getSignUP,
